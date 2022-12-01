@@ -1,0 +1,37 @@
+GET http://localhost/RESTAPI/read.php
+Accept: application/json
+
+###
+GET http://localhost/RESTAPI/read_one.php/?id=20
+Accept: application/json
+###
+
+POST http://localhost/RESTAPI/create.php
+Content-Type: application/json
+
+{
+  "title": "Server_50",
+  "type": "5",
+  "price": "1"
+}
+
+###
+PUT http://localhost/RESTAPI/update.php
+Content-Type: application/json
+
+		{
+			"id": "22",
+			"title": "Server_22",
+			"type": "4",
+			"price": "400"
+		}
+
+
+###
+
+DELETE http://localhost/RESTAPI/delete.php
+Content-Type: application/json
+
+{
+  "id": 22
+}
