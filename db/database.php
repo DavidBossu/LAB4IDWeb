@@ -7,7 +7,10 @@ class Database{
     private $username = "root";
     private $password = "";
     public $conn;
-  
+
+    /**
+
+    */
     // get the database connection
     public function getConnection(){
   
